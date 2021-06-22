@@ -7,20 +7,11 @@ on:
 
 jobs:
   release:
-    strategy:
-      fail-fast: false
-      matrix:
-        otp: [24]
     runs-on: ubuntu-20.04
-    container:
-      image: erlang:${{ matrix.otp }}
     steps:
       - name: Check out
         uses: actions/checkout@v2
-
-      - run: rebar3 edoc
-
       - name: Publish to hex.pm
-        run: rebar3 hex publish --repo hexpm --yes || head rebar3.crashdump
+        run: rebar3 hex publish --repo hexpm --yes --without-docs
         env:
           HEX_API_KEY: ${{ secrets.HEX_API_KEY }}
