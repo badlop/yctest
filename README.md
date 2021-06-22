@@ -2,8 +2,8 @@
 
 This is a temporary fork of yconf for testing github action hex publishing
 
-[![CI](https://github.com/processone/yctest/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/processone/yctest/actions/workflows/ci.yml)
-[![Coverage Status](https://coveralls.io/repos/processone/yctest/badge.svg?branch=master&service=github)](https://coveralls.io/github/processone/yctest?branch=master)
+[![CI](https://github.com/badlop/yctest/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/badlop/yctest/actions/workflows/ci.yml)
+[![CI](https://github.com/badlop/yctest/actions/workflows/hexpm-release.yml/badge.svg?branch=main)](https://github.com/badlop/yctest/actions/workflows/hexpm-release.yml)
 [![Hex version](https://img.shields.io/hexpm/v/yctest.svg "Hex version")](https://hex.pm/packages/yctest)
 
 You can find usage example in ejabberd. See `econf.erl` and `ejabberd_options.erl` for most parts that are using it.
